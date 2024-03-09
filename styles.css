@@ -1,0 +1,92 @@
+body {
+    background-image: url('currency.jpg'); /* Replace 'background-image.jpg' with the path to your image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.container {
+    background-color: #e66161;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 400px; /* Increase the width of the main div */
+    height: 500px; /* Increase the height of the main div */
+    
+    
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type="number"]::before {
+    content: "PKR"; /* Replace 'PKR' with the desired currency symbol */
+    position: absolute;
+    left: 10px; /* Adjust as needed for proper positioning */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666; /* Adjust color of the currency symbol */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Update the output field styles */
+
+
+
+
+/* Update the output field styles */
+#result {
+    width: calc(100% - 30p); /* Fixed width for the result input field */
+    padding: 10px; 
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    position: relative; /* Ensure the position is relative for absolute positioning of currency symbol */
+    resize: none; /* Prevent resizing of the input field */
+}
+
+
+/* Insert content before the output field *
